@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard StarWars</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="lateral__menu">
+            <img src="assets/logo.png" alt="">
+            <div class="menu__items">
+                <ul>
+                    <li>
+                        <img src="assets/dashboard.svg" alt="">
+                        <p>Dashboard</p>
+                    </li>
+                    <li>
+                        <img src="assets/characters.svg" alt="">
+                        <p>Characters</p>
+                    </li>
+                    <li>
+                        <img src="assets/planets.svg" alt="">
+                        <p>Planets and Moons</p>
+                    </li>
+                    <li>
+                        <img src="assets/ship.svg" alt="">
+                        <p>Spaceships</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="settings">
+                <i data-feather="settings"></i>
+                <p>Settings</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards__header">
+                <!-- Small Card -->
+                <div class="card card__small">
+                    <div class="card__content">
+                        <div class="card__info">
+                            <p>Characters</p>
+                            <h2 id="characters"></h2>
+                        </div>
+                        <img src="assets/characters-black.svg" alt="">
+                    </div>
+                </div>
+                <!-- Large Card -->
+                <div class="card card__large">
+                    <div class="card__container">
+                        <div class="card__content">
+                            <div class="card__info">
+                                <p>Moons</p>
+                                <h2 id="moons"></h2>
+                            </div>
+                            <img src="assets/moon-black.svg" alt="">
+                        </div>
+
+                        <div class="card__content">
+                            <div class="card__info">
+                                <p>Planets</p>
+                                <h2 id="planets"></h2>
+                            </div>
+                            <img src="assets/planets-black.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Small Card -->
+                <div class="card card__small">
+                    <div class="card__content">
+                        <div class="card__info">
+                            <p>Spaceships</p>
+                            <h2 id="spaceships"></h2>
+                        </div>
+                        <img src="assets/ship-black.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__info">
+                <div class="table">
+                    <h5>Last movies</h5>
+                    <p>Know the latest releases of the brand</p>
+                    <table id="filmsTable">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Release Date</th>
+                                <th>Director</th>
+                                <th>Episode</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="chart">
+                    <div id="piechart" style="width: 400px; height: 400px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feather Icons -->
+    <script>feather.replace()</script>
+
+    <!-- Moment CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <!-- Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- jQuery Import -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Axios HTTP -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
