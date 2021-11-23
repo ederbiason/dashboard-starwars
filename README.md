@@ -47,7 +47,7 @@ I started to study how to use external APIs, so to practice it, I did this Star 
 </div>
 
 ## :memo: License
-This project is under the MIT license. See the [LICENSE](https://github.com/ederbiason/halloween-website/blob/main/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/ederbiason/dashboard-starwars/blob/main/LICENSE) for more information.
 
 ## :handshake: Contributing
 This project is for study purposes too, so send me an email telling me what you are doing and why you are doing it, teach me what you know.
