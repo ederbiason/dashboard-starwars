@@ -64,3 +64,34 @@ async function drawChart() {
 
     chart.draw(data, options);
 }
+
+// // Show modal
+// function showPopup(id) {
+//     document.getElementById(id).style.visibility = "visible";
+//     document.getElementsByClassName("modal").style.visibility = "visible";
+  
+//     document.getElementById(id).setAttribute("class", "modal__container");
+// }
+  
+// // Hide modal
+// function hidePopup(id) {
+//     document.getElementById(id).style.visibility = "hidden";
+//     document.getElementsByClassName("modal").style.visibility = "hidden";
+  
+//     document.getElementById(id).setAttribute("class", "modal__container");
+// }
+
+function startModal(modalID) {
+    const modal = document.getElementById(modalID);
+    if(modal) {
+        modal.classList.add("show__modal");
+        modal.addEventListener("click", (e) => {
+            if(e.target.id == modalID || e.target.className == "close") {
+                modal.classList.remove("show__modal")
+            }
+        })
+    }
+}
+
+const dashboard = document.getElementById("modal")
+dashboard.addEventListener('click', () => startModal())
